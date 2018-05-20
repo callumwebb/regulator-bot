@@ -1,24 +1,18 @@
 
 
+
 body { 
   max-width: 900px; 
   margin: auto; 
   vertical-align: middle;
 }
 
-/*h1 {
-    font-size: 8vw;
-}
-
-p {
-  font-size: 4vw;
-}*/
-
 #wayne-img {
   text-align: center;
   margin: auto;
-  /*max-width: 200px;*/
-  max-width: 20%;
+  margin-top: 20px;
+  max-width: 180px;
+  /*max-width: 20%;*/
 }
 
 #panel {
@@ -27,6 +21,8 @@ p {
 }
 
 #container {
+  margin-top: 20px;
   padding: 10px;
   background-color: #fcfcfc;
+  border-radius: 15px;
 }
