@@ -1,0 +1,23 @@
+
+
+body { 
+  max-width: 900px; 
+  margin: auto; 
+  vertical-align: middle;
+}
+
+#wayne-img {
+  text-align: center;
+  margin: auto;
+  max-width: 200px;
+}
+
+#panel {
+  text-align: center;
+  margin:auto;
+}
+
+#container {
+  padding: 10px;
+  background-color: #fcfcfc;
+}
