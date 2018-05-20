@@ -37,5 +37,6 @@ def wayne():
     return generate_utterance(wayne_model, 10)
 
 if __name__ == '__main__':
-    app.jinja_env.auto_reload = True
-    app.run(debug=True, port=5555)
+    # app.run(debug=True, port=5555)
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port, debug=True)
