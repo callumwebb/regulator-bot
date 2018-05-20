@@ -26,7 +26,7 @@ def generate_utterance(lm, order):
         history = history[-order:] + c
         out.append(c)
 
-    return "".join(out)
+    return "".join(out)[:-1]
 
 @app.route('/')
 def index():
@@ -34,7 +34,7 @@ def index():
 
 @app.route("/wayne")
 def wayne():
-    return generate_utterance(wayne_model, 10)
+    return "<p>" + generate_utterance(wayne_model, 10) + "</p>"
 
 if __name__ == '__main__':
     # app.run(debug=True, port=5555)

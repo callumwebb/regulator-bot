@@ -6,10 +6,19 @@ body {
   vertical-align: middle;
 }
 
+/*h1 {
+    font-size: 8vw;
+}
+
+p {
+  font-size: 4vw;
+}*/
+
 #wayne-img {
   text-align: center;
   margin: auto;
-  max-width: 200px;
+  /*max-width: 200px;*/
+  max-width: 20%;
 }
 
 #panel {
