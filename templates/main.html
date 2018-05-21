@@ -9,7 +9,7 @@
     <script>
       $(document).ready( function() {
           $('#next').click(function() {
-             $.ajax("{{ url_for('wayne') }}").done(function (reply) {
+             $.ajax("{{ url_for('wayne') }}", {cache: false}).done(function (reply) {
                 $('#container').html(reply);
              });
           });
