@@ -3,8 +3,8 @@ from flask import Flask, render_template
 import json
 from random import random
 
-with open("static/wayne.json") as json_file:
-    wayne_model = json.load(json_file)
+with open("static/model.json") as json_file:
+    model = json.load(json_file)
 
 app = Flask(__name__)
 
@@ -32,9 +32,9 @@ def generate_utterance(lm, order):
 def index():
     return render_template("main.html")
 
-@app.route("/wayne")
-def wayne():
-    return "<p>" + generate_utterance(wayne_model, 10) + "</p>"
+@app.route("/wisdom")
+def wisdom():
+    return "<p>" + generate_utterance(model, 11) + "</p>"
 
 if __name__ == '__main__':
      # app.run(debug=True, port=5555)

@@ -9,7 +9,7 @@
     <script>
       $(document).ready( function() {
           $('#next').click(function() {
-             $.ajax("{{ url_for('wayne') }}", {cache: false}).done(function (reply) {
+             $.ajax("{{ url_for('wisdom') }}", {cache: false}).done(function (reply) {
                 $('#container').html(reply);
              });
           });
@@ -17,11 +17,11 @@
     </script>
   </head>
   <body>   
-    <h1>APRA Wayne-bot</h1>
+    <h1>Regulator-bot 1000</h1>
     <div id = "panel">
-      <img id="wayne-img" src="{{url_for('static', filename='img/wayne.png')}}" />
+      <img id="bender-img" src="{{url_for('static', filename='img/bender.png')}}" />
       </br>
-      <input type="button" id="next" value="Respond to Senate" />
+      <input type="button" id="next" value="Respond to question" />
     </div>
     <div id="container"></div>
   </body>
